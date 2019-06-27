@@ -7,17 +7,18 @@
   let appData={
       budget: money,
       timeData: time,
+      expenses: {},
       optionalExpenses: {},
       income:[],
       saving:false,
-  }
+  };
       
   let firstq = prompt ('Введите обязательную статью расходов в этом месяце','');  
   let secondq = prompt ('Во сколько обойдется?','');  
   let firstq1 = prompt ('Введите обязательную статью расходов в этом месяце','');
-  let firstq2 = prompt ('Во сколько обойдется?','');
-  expenses: {
-      кефир:20 
-  }
+  let secondq2 = prompt ('Во сколько обойдется?','');
+  
+  appData.expenses.firstq = secondq;
+  appData.expenses.firstq1 = secondq2;
 
    alert (appData.budget/30);
